@@ -1,0 +1,26 @@
+/* Global preset styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.nav--bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: solid 0.2rem rgb(41, 39, 93);
+}
+
+.nav--bar ul {
+  display: flex;
+  gap: 2rem;
+}
