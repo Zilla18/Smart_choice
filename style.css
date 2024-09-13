@@ -21,54 +21,55 @@ h6 {
   color: rgb(196, 196, 196);
   font-family: sans-serif;
   font-weight: 400;
+  line-height: 2rem;
 }
 p {
   color: rgb(196, 196, 196);
+  line-height: 2rem;
 }
 img {
   width: 100%;
 }
 
 /* navbar stytling starts */
-.navbar {
-  display: none;
-  justify-content: space-between;
-  align-items: center;
+#nav--header {
   position: sticky;
-}
-/* navbar media quarry */
-@media screen and (min-width: 700px) {
-  .navbar {
-    display: flex;
-  }
+  top: 0;
 }
 
-.nav--bar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
+  top: 0;
   padding: 2rem;
   border-bottom: solid 0.2rem rgb(41, 39, 93);
   background-color: rgba(102, 48, 152, 0.916);
 }
 
-.nav--bar ul {
-  display: flex;
+.navbar ul {
+  display: none;
   gap: 2rem;
   color: white;
+}
+/* navbar media quarry */
+@media screen and (min-width: 600px) {
+  .navbar ul {
+    display: flex;
+  }
 }
 
 .hero--section {
   background-color: rgb(11, 11, 11);
-  /* height: 50vh; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   padding: 1rem;
+  gap: 2rem;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 600px) {
   .hero--section {
     display: flex;
     flex-direction: row;
@@ -80,14 +81,22 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   /* margin: auto; */
-  gap: 1.5rem;
+  gap: 2rem;
 }
 .hero--image {
-  height: 200px;
   max-width: 700px;
 }
+.hero--image img {
+  border-radius: 3rem;
+}
 
-.hero--head {
-  min-width: 500px;
+.hero--head span {
+  display: flex;
+}
+@media screen and (min-width: 600px) {
+  .hero--head span {
+    display: none;
+  }
 }
