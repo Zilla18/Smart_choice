@@ -21,11 +21,11 @@ h6 {
   color: rgb(196, 196, 196);
   font-family: sans-serif;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 p {
   color: rgb(196, 196, 196);
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 img {
   width: 100%;
@@ -41,8 +41,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
   padding: 2rem;
   border-bottom: solid 0.2rem rgb(41, 39, 93);
   background-color: rgba(102, 48, 152, 0.916);
@@ -82,8 +80,7 @@ img {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  /* margin: auto; */
-  gap: 2rem;
+  gap: 1rem;
 }
 .hero--image {
   max-width: 700px;
@@ -119,4 +116,9 @@ img {
     height: 30px;
     width: 50px;
   }
+}
+
+/* carousel image styling */
+.carousel-item img {
+  border-radius: 1rem;
 }
