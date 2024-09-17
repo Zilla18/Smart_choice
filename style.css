@@ -10,7 +10,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: purple;
 }
 h1,
 h2,
@@ -35,6 +35,7 @@ img {
 #nav--header {
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 .navbar {
@@ -42,14 +43,16 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  position: sticky;
+  top: 0;
   border-bottom: solid 0.2rem rgb(41, 39, 93);
-  background-color: rgba(102, 48, 152, 0.916);
+  background-color: white;
 }
 
 .navbar ul {
   display: none;
   gap: 2rem;
-  color: white;
+  /* color: white; */
 }
 /* navbar media quarry */
 @media screen and (min-width: 600px) {
@@ -59,7 +62,7 @@ img {
 }
 
 .hero--section {
-  background-color: rgb(11, 11, 11);
+  background-color: purple;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,7 +108,7 @@ img {
   padding: 2rem;
   gap: 1rem;
   border-bottom: 0.01rem solid rgb(41, 39, 93);
-  background-color: rgb(44, 42, 40);
+  background-color: white;
 }
 
 .product--logo img {
@@ -119,6 +122,15 @@ img {
 }
 
 /* carousel image styling */
+.carousel-bg {
+  background-color: rgb(252, 250, 255);
+  z-index: -3000;
+}
 .carousel-item img {
-  border-radius: 1rem;
+  border-radius: 1.5rem;
+}
+
+.container-fluid {
+  position: relative;
+  z-index: -3000;
 }
