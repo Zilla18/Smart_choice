@@ -115,6 +115,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 2rem;
   gap: 1rem;
   border-bottom: 0.01rem solid rgb(41, 39, 93);
@@ -124,17 +125,16 @@ img {
 .product--logo img {
   border-radius: 1rem;
 }
-@media screen and (min-width: 600px) {
-  .product--logo img {
-    height: 30px;
-    width: 50px;
-  }
+
+.product--logo img {
+  height: 30px;
+  width: 50px;
 }
 
 /* carousel image styling */
 .carousel-bg {
   background-color: rgb(252, 250, 255);
-  z-index: -3000;
+  /* z-index: -3000; */
 }
 .carousel-item img {
   border-radius: 1.5rem;
@@ -153,6 +153,7 @@ img {
   justify-content: space-between;
   flex-direction: column;
   padding: 1.5rem;
+  margin: 2rem 0;
   align-items: center;
   border-radius: 20px 20px 0 0;
 }
